@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="generateArt()">Generate Art</button>
+    <button onclick="zoomOut()"> - </button>
+    <button onclick="zoomIn()"> + </button>
+    <label for="invertButton">Invert</label>
+    <input type="checkbox" id="invertButton">
+    <label for="shadeString">Shade String</label>
+    <input type="text" id="shadeString" value="Ñ@#W$9876543210?!abc;:+=-,._   ">
+    <label for="resolution">Resolution</label>
+    <input type="range" id="resolution" value="100" min="10" max="500">
+    <script src="script.js"></script>
+    <div id="artResult"></div>
+</body>
+</html>
